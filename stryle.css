@@ -20,107 +20,137 @@
 }
 
 
+/* Reset and Base Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1e1e1e;
-    color: #ffffff;
+    background-color: #f9f9f9;
+    color: #222222;
     overflow-x: hidden;
 }
 
+/* Header */
 header {
-    background: linear-gradient(to right, #ff6700, #0077ff);
-    padding: 1.25rem;
+    background: linear-gradient(to right, #e0e0e0, #ffffff);
+    padding: 1.5rem 1rem;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
-    color: white;
+    font-size: 2.8rem;
+    color: #333333;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
     font-family: "anirontt";
+    font-weight: bold;
 }
 
-main {
-    padding: 1.25rem;
-}
-
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 2.5rem;
-    background-color: #282828;
+    padding: 3rem 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero h2 {
-    font-size: 2rem;
-    color: #ff6700;
+    font-size: 2.4rem;
+    color: #444444;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #b0b0b0;
-    max-width: 37.5rem;
-    margin: 1.25rem auto;
+    color: #666666;
+    margin: 1.5rem auto;
+    max-width: 600px;
+    line-height: 1.6;
 }
 
 .progress-bar {
-    background-color: #333333;
-    border-radius: 0.3125rem;
+    background-color: #eeeeee;
+    border-radius: 5px;
     overflow: hidden;
-    margin: 1.25rem auto;
-    max-width: 37.5rem;
+    margin: 2rem auto;
+    max-width: 600px;
 }
 
 .progress-bar-fill {
     height: 1.25rem;
-    background: linear-gradient(to right, #ff6700, #0077ff);
-    width: 50%; /* Example progress */
+    background: linear-gradient(to right, #44c7f4, #78e08f);
+    width: 10%; /* Example progress */
+    border-radius: 5px 0 0 5px;
 }
 
+/* Rewards Section */
 .rewards {
-    margin: 2.5rem 0;
+    margin: 4rem auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
 .reward {
-    background: #2c2c2c;
-    margin: 0.625rem auto;
-    padding: 1.25rem;
-    border-radius: 0.3125rem;
-    max-width: 37.5rem;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 1.5rem;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reward:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .reward h3 {
-    color: #ff6700;
+    color: #44c7f4;
+    font-size: 1.5rem;
 }
 
-footer {
-    text-align: center;
-    padding: 1.25rem;
-    background-color: #1e1e1e;
-    border-top: 0.0625rem solid #333333;
-    color: #b0b0b0;
+.reward p {
+    font-size: 1rem;
+    color: #555555;
+    margin-top: 1rem;
 }
 
-button {
-    background: #ff6700;
-    color: white;
-    border: none;
-    padding: 0.625rem 1.25rem;
-    cursor: pointer;
-    border-radius: 0.3125rem;
-}
-
-button:hover {
-    background: #e65c00;
-}
-
+/* Call-to-Action Button */
 .cta {
     text-align: center;
-    margin: 2.5rem 0;
+    margin: 4rem 0;
 }
 
 .cta button {
     font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    background: linear-gradient(to right, #44c7f4, #78e08f);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #38a1d8, #62c176);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f1f1f1;
+    border-top: 1px solid #dddddd;
+    color: #666666;
+    font-size: 0.9rem;
 }
