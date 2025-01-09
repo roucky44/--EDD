@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: none;
+}
+
+/*------ FONTS ------ */
+
+@font-face {
+    font-family: "anirontt";
+    src: url("assets/font/anirm___.ttf");
+}
+
+.anirontt {
+    font-family: "anirontt";
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(to right, #ff6700, #0077ff);
+    padding: 1.25rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: white;
+    font-family: "anirontt";
+}
+
+main {
+    padding: 1.25rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: #282828;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #ff6700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    max-width: 37.5rem;
+    margin: 1.25rem auto;
+}
+
+.progress-bar {
+    background-color: #333333;
+    border-radius: 0.3125rem;
+    overflow: hidden;
+    margin: 1.25rem auto;
+    max-width: 37.5rem;
+}
+
+.progress-bar-fill {
+    height: 1.25rem;
+    background: linear-gradient(to right, #ff6700, #0077ff);
+    width: 50%; /* Example progress */
+}
+
+.rewards {
+    margin: 2.5rem 0;
+}
+
+.reward {
+    background: #2c2c2c;
+    margin: 0.625rem auto;
+    padding: 1.25rem;
+    border-radius: 0.3125rem;
+    max-width: 37.5rem;
+    text-align: center;
+}
+
+.reward h3 {
+    color: #ff6700;
+}
+
+footer {
+    text-align: center;
+    padding: 1.25rem;
+    background-color: #1e1e1e;
+    border-top: 0.0625rem solid #333333;
+    color: #b0b0b0;
+}
+
+button {
+    background: #ff6700;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+}
+
+button:hover {
+    background: #e65c00;
+}
+
+.cta {
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.cta button {
+    font-size: 1.2rem;
+}
