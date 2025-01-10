@@ -19,6 +19,11 @@
     font-family: "anirontt";
 }
 
+/* VARIABLES CSS */
+:root {
+    --gradient: #f10303, #f1c70a;
+}
+
 
 /* Reset and Base Styles */
 body {
@@ -35,7 +40,23 @@ header {
     background: linear-gradient(to right, #e0e0e0, #ffffff);
     padding: 1.5rem 1rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#mainlogo {
+    width: 30%;
+    left: 50%;
+    margin-bottom: -7%;
+}
+
+#h2font {
+    font-family: "anirontt";
+    font-size: xx-large;
+    font-weight: 100;
+    background-image: linear-gradient(45deg, #f10303, #f1c70a);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header h1 {
@@ -82,7 +103,7 @@ header h1 {
 
 .progress-bar-fill {
     height: 1.25rem;
-    background: linear-gradient(to right, #44c7f4, #78e08f);
+    background: linear-gradient(to right, #f10303, #f1c70a);
     width: 10%; /* Example progress */
     border-radius: 5px 0 0 5px;
 }
