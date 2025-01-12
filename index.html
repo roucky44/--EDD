@@ -6,6 +6,16 @@
     <title>Volcano Ascent | Kickstart Campain 2025</title>
     <link rel="icon" type="image/x-icon" href="assets/V-Logo.png" />
     <link rel="stylesheet" href="stryle.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <script type="importmap">
+      { 
+      "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="main.js" defer></script>
   </head>
   <body>
     <header>
@@ -23,6 +33,11 @@
           <div class="progress-bar-fill"></div>
         </div>
         <p><strong>Goal:</strong> 10,000€ | <strong>Raised:</strong> 1,000€</p>
+      </div>
+
+      <div class="siderules">
+        <h3>Règles du jeu</h3>
+
       </div>
 
       <section class="rewards">
@@ -47,14 +62,14 @@
       </section>
 
       <div class="cta">
-        <button>Contribute Now</button>
+        <button>Contribue !</button>
       </div>
     </main>
+
+    <img id="demonimg" src="assets/demon.png" alt="demonimg">
 
     <footer>
       <p>&copy; 2025 Volcano Ascent. All rights reserved.</p>
     </footer>
   </body>
-
-  <script src="main.js"></script>
 </html>
