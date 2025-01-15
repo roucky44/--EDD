@@ -19,6 +19,15 @@
     font-family: "anirontt";
 }
 
+@font-face {
+    font-family: "jacquard";
+    src: url("assets/font/Jacquard24-Regular.ttf");
+}
+
+.aligard {
+    font-family: "jacquard";
+}
+
 /* VARIABLES */
 :root {
     --gradient-hover: linear-gradient(#da1212, #dab40b);
@@ -172,6 +181,26 @@ header h1 {
 #demonimg {
     display: flex;
     justify-content: left;
+}
+
+#Kickstart {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url("assets/img/volcano_background.jpg");
+}
+
+#h3kickstart {
+    font-family: "jacquard";
+    background-image: var(--gradient);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 700%;
+}
+
+.bannerimg {
+    width: 20%;
 }
 
 /* Footer */
