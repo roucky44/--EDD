@@ -26,19 +26,20 @@
 }
 
 
-/* Reset and Base Styles */
+/* Reset and base settings */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #1f1f1f;
     color: #222222;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 /* Header */
 header {
-    background: linear-gradient(to right, #e0e0e0, #ffffff);
+    background: linear-gradient(to right, #414141, #1a1a1a);
     padding: 1.5rem 1rem;
     text-align: center;
     box-shadow: 0 .125rem .0625rem rgba(0, 0, 0, 0.1);
